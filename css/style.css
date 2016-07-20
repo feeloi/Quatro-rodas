@@ -1,0 +1,216 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	font-size: 100%;
+	border:none;
+	outline:none;
+	font-weight:300;
+	box-sizing: border-box;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a{
+	text-decoration:none;
+}
+ul{
+	list-style:none;
+}
+img{
+	max-width:100%;
+}
+.boxBanner{
+	margin:0 auto;
+	width:300px;
+	padding:5px;
+}
+.bannerFull{
+	margin:0 auto;
+	width:729px;
+	height:91px;
+	padding:10px;
+  	display:none;
+}
+.cabecalho{
+	width:100%;
+	float:left;
+	padding:3% 4%;
+	background-color:#ed1c24;
+	
+}
+.lupa{
+	width:32px;
+	height:32px;
+	background-image:url(../images/lupa.png);
+	float:left;
+	margin-right:2%;	
+}
+.logo{
+    width:150px;
+	height:32px;
+	background-image:url(../images/logo_mob.png);
+	float:left;
+	margin-right:2%;
+}
+.btAssine{
+	 width:56px;
+	height:32px;
+	background-image:url(../images/bt_assine.png); 
+	float:right;	
+}
+.btFechar{
+	 width:32px;
+	height:32px;
+	background-image:url(../images/bt_fechar.png);
+	float:right;
+	cursor:pointer;
+	margin-top:10px;
+	margin-right:10px;
+}
+.menu{
+	width:100%;
+	height:100%;
+	position:fixed;
+	background-color:#d41f1f;
+	top:63px;
+	left:0;
+	display:none;
+	
+}
+.menu ul{
+	width:100%;
+	float:left;
+	text-align:left;
+	margin-top:5%;
+}
+.menu li{
+	padding:1.5%;
+	border-style:solid none none none;
+	border-width:thin;
+	border-color:#c21c1c;	
+	
+}
+.menu li a{
+	font-size:1.3em;
+	color:#FFF;
+	padding-left: 5%;
+	padding-bottom:15%;
+}
+.menu li a:hover{
+	cursor:pointer;
+}
+
+.imgList{
+	float:right;
+	margin-top:3%;
+}
+
+.conteudo01{
+	width:100%;
+	float:left;
+	margin-bottom:3px;	
+}
+.bannerBotton{
+	width:100%;
+	float:left;
+}
+.menu02{	
+	background-image:url(../images/menu02.png) ;
+	background-repeat:no-repeat;
+	width:100%;
+	height:30px;
+	float:left;
+	display:none;	
+}
+.corpoSite{
+	width:100%;
+	display:none;
+}
+
+
+  
+
+/* medias */
+@media screen and (min-width: 768px){
+   .conteudo01{ 
+   width:49%;    
+   }
+}
+@media screen and (min-width: 960px){
+	.cabecalho{
+		padding:2%;
+		margin-top:15px;		
+		height:80px;
+		
+	}
+	.boxBanner{
+	display:none;
+	}
+	
+	.btAssine{
+		display:none;
+	}
+	.lupa{
+	display:none;
+	}
+	.conteudo01{
+	display:none;
+	}
+	.boxBanner{
+	display:none;
+	}
+  .logo{
+	  background-image:url(../images/logo_large.png);
+	  width:187px;
+	  height:43px;
+	  
+  }
+  
+   .bannerFull{
+   display:block;
+  
+   }
+   
+   .menu{
+	width:70%;
+	float:right;
+	background-color:#ed1c24;
+	top:0;
+	left:0;
+	position:static;
+	line-height:56px;
+	display:block;	
+}
+.menu ul{
+	width:100%;
+	float:left;
+	text-align:left;
+	margin-top:0;
+}
+.menu li{
+	float:left;
+	border:none;
+	padding:0;
+}
+.menu li a{
+	font-size:0.8em;
+	color:#FFF;
+	padding:0;
+}
+
+.btFechar{
+	display:none;
+}
+.imgList{
+	float:right;
+	margin-top:20px;
+	padding:5px;	
+}
+.menu02{
+	display:block;
+}
+.corpoSite{
+	display:block;
+}
+
+
+}
